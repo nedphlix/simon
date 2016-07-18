@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(https://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5ugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z3NuWYKPzoeKl5tYj8yhly0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	background-color: #e5e5e5;
+	color: #1F1E1C;
+	padding-top: 50px;
+	padding-left: 25%;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+/* 
+	colors:
+	green: #02D15F
+	blue: #0164CC
+	red: #FE0113
+	yellow: #F2C301
+	dark grey: #1F1E1C
+*/
+
+.circle {
+	height: 200px;
+	width: 200px;
+	border: 10px solid #1F1E1C;
+	display: inline-block;
+	float: left;
+}
+
+#circle1 {
+	border-top-left-radius: 100%;
+	border-top: 20px solid #1F1E1C;
+	border-left: 20px solid #1F1E1C;
+	background-color: #02D15F;
+}
+
+#circle2 {
+	border-top-right-radius: 100%;
+	border-top: 20px solid #1F1E1C;
+	border-right: 20px solid #1F1E1C;
+	background-color: #FE0113;
+}
+
+#circle3 {
+	clear: both;
+	border-bottom-left-radius: 100%;
+	border-bottom: 20px solid #1F1E1C;
+	border-left: 20px solid #1F1E1C;
+	background-color: #F2C301;
+}
+
+#circle4 {
+	border-bottom-right-radius: 100%;
+	border-bottom: 20px solid #1F1E1C;
+	border-right: 20px solid #1F1E1C;
+	background-color: #0164CC;
+}
+
+.center-row {
+	clear: both;
+	height: 0px;
+	z-index: -5;
+}
+
+.center {
+	height: 240px;
+	width: 240px;
+	background-color: #fff;
+	border: 10px solid #1F1E1C;
+	border-radius: 100%;
+	z-index: 1;
+	position: relative;
+	top: -130px;
+	left: 100px;
+	text-align: center;
+}
+
+#title {
+	font-size: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	height: 40px;
+}
+
+.button-container {
+	display: inline-block;
+	height: 80px;
+	width: 60px;
+	margin: 0px 0px 20px 0px;
+}
+
+.button-container-upper {
+	height: 50px;
+	width: 60px;
+}
+
+.button-label {
+	height: 30px;
+	width: 60px;
+}
+
+.button-label-text {
+	font-size: 15px;
+	margin: 0px;
+	height: 30px;
+	padding-top: 7.5px;
+}
+
+#screen-main {
+	height: 40px;
+	width: 60px;
+	background-color: #1F1E1C;
+	border-radius: 10px;
+}
+
+#placeholder-1 {
+	height: 5px;
+	width: 60px;
+}
+
+#screen-text {
+	margin: 0px; 
+	color: #DC0D29;
+	font-size: 25px;
+	font-weight: bold;
+	height: 40px;
+	padding-top: 6px;
+}
+
+.round-button {
+	height: 22px;
+	width: 22px;
+	border: 2px solid #1F1E1C;
+	border-radius: 100%;
+	margin-left: 16.5px;
+}
+
+#start-button {
+	background-color: #FC0102;
+}
+
+#strict-button {
+	background-color: #FFFF00;
+}
+
+.placeholder-2 {
+	height: 12.5px;
+	width: 60px;
+	text-align: center;
+}
+
+#strict-light {
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: #FFF;
+	border: 1px solid black;
+	margin-left: 35px;
+}
+
+#off-on-container {
+	clear: both;
+	width: 120px;
+	height: 25px;
+	margin: 0px 0px 0px 60px;
+}
+
+.off-on-label {
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 25px;
+	height: 25px;
+	width: 25px;
+	float: left;
+}
+
+#off-on-label-1 {
+	float: left;
+	text-align: right;
+}
+
+#off-on-label-2 {
+	float: right;
+	text-align: left;
+}
+
+#off-on-button-container {
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+	background-color: #1F1E1C;
+	border-radius: 2.5px;
+}
+
+.off-on-button {
+	height: 19px;
+	width: 19px;
+	border-radius: 2.5px;
+	margin: 3px;
+	background-color: #fff;
+}
+
+#off-on-button-1 {
+	float: left;
+}
+
+#off-on-button-2 {
+	float: right;
+	display: none;
+}
+
+#help {
+	clear: both;
+	text-align: left;
+	width: 460px;
+}
+
+.help-text {
+	font-size: 15px;
+	font-weight: bold;
+	color: #1F1E1C;
+	text-decoration: none;
+	box-shadow: inset 0 -2px 0 0 rgba(29,27,28, 1);
+
+}
+
+#credits-text {
+	float: right;
+}
