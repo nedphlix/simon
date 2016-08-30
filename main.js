@@ -146,28 +146,32 @@ function startGame() {
 			}
 		}
 		console.log(correct);
-		if (correct.indexOf(false) === -1 && round < 5) {
+		if (correct.indexOf(false) === -1 && round < 20) {
 			setTimeout(function() {
-				alert("Good job, keep'em coming!");
+				alert("Good job, on to the next one!");
 				userInput = [];
 				round += 1;
 				screenText.innerHTML = round;
 				newRound();
 			}, 1500);
 				
-		} else if (correct.indexOf(false) === -1 && round === 5) {
+		} else if (correct.indexOf(false) === -1 && round === 20) {
 			setTimeout(function() {
 				alert("YOU WIN!! SUCH AWESOME <3");	
+				round = 1;
+				screenText.innerHTML = round;
+				userAllowedToPlay = false; // so that users can't click initially
+				newRound();
 			}, 1500);
-			
+
 		} else if (correct.indexOf(false) !== -1) {
 			setTimeout(function() {
-				alert("WRONG!! Try again");
+				alert("WRONG!! Look, here it is one more time");
 				userInput = [];
+				userAllowedToPlay = false;
 				if (strict === true) {
 					round = 1;
 					screenText.innerHTML = round;
-					userAllowedToPlay = false; // so that users can't click initially
 					newRound();
 				} else {
 					newRound();
