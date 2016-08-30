@@ -1,0 +1,8 @@
+1- Computer generates random array with numbers
+2- computer takes first number and highlights it (visual + sound)
+3- User can click either of the four
+4- click is recorded
+5- either correct or wrong
+6a- if correct: start over with first & second number, etc (range from 0 to round)
+6b- if wrong: start pover with same range
+7- if 13 times correct: alert you win, reset everything
