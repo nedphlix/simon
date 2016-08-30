@@ -149,28 +149,30 @@ function startGame() {
 		if (correct.indexOf(false) === -1 && round < 5) {
 			setTimeout(function() {
 				alert("Good job, keep'em coming!");
+				userInput = [];
+				round += 1;
+				screenText.innerHTML = round;
+				newRound();
 			}, 1500);
-			userInput = [];
-			round += 1;
-			screenText.innerHTML = round;
-			newRound();
+				
 		} else if (correct.indexOf(false) === -1 && round === 5) {
 			setTimeout(function() {
 				alert("YOU WIN!! SUCH AWESOME <3");	
 			}, 1500);
+			
 		} else if (correct.indexOf(false) !== -1) {
 			setTimeout(function() {
 				alert("WRONG!! Try again");
+				userInput = [];
+				if (strict === true) {
+					round = 1;
+					screenText.innerHTML = round;
+					userAllowedToPlay = false; // so that users can't click initially
+					newRound();
+				} else {
+					newRound();
+				}
 			}, 1500);
-			userInput = [];
-			if (strict === true) {
-				round = 1;
-				screenText.innerHTML = round;
-				userAllowedToPlay = false; // so that users can't click initially
-				newRound();
-			} else {
-				newRound();
-			}
 		}
 	}
 
